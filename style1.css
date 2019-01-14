@@ -120,11 +120,11 @@ body {
 
 
 body { 
-		
-	font-family: "Verdana";
-	color: Orange;
+	 
+	 font-family: "Impact";
+	 color: orange;
 	
-	 background-image: url("https://wallpaperplay.com/walls/full/3/9/5/132995.jpg");
+	 background-image: url("https://i.pinimg.com/originals/fe/c7/31/fec731d1b8371c8e50a61fdfeb070472.jpg");
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 background-attachment: fixed;
@@ -139,7 +139,7 @@ h2 {
 }
 
 main {
-		font-family: "Verdana";
+		
 		margin-left: 30px;
 		text-align: left;
 		
@@ -147,31 +147,43 @@ main {
 		
 p {
 			margin-left: 35px;
-			margin-right: 20px;
+			margin-right: 35px;
 			text-align: left;
-			color: Orange;
-			background-color: black;
+			color: purple;
+			background-color: white;
+			font-weight: bold;
 }
 
 li{
-			background-color: black;
+			background-color: transparent;
+			font-weight: bold;
+			color: orange;
 			margin-left: 35px;
-			margin-right: 20px;
+			margin-right: 35px;
+			font-family: Gill Sans, sans-serif;
 
 
 
 }
 
+#p {
+	
+			background-color: black;
+			font-weight: bold;
+			color: orange;
+			margin-left: 35px;
+			margin-right: 35px;
+			font-family: Gill Sans, sans-serif;
 
-
-#Home{ 
-		text-align: left;
-		margin-left: px;
 }
 
-#player option[value="Lebron James"] { background-image:url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254");}
-#player option[value="female"] { background-image:url(female.png); }
-#player option[value="others"] { background-image:url(others.png); }
-#player option[value="h"]   { background-image:url(.png);   }
-#player option[value="l"] { background-image:url(s.png); }
-#player option[value="m"] { background-image:url(e.png); }
+#boop{
+	 
+	 font-family: "Impact";
+	 color: orange;
+
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-attachment: fixed;
+	 margin-left:0px;
+}

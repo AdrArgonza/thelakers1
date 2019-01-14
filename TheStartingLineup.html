@@ -5,6 +5,85 @@
         <title>TheLakers</title>
         <link rel="stylesheet" type="text/css" href="style1.css">
         <script type="text/javascript" src="date_time.js"></script>
+        <style type ="text/css">
+          table {
+              border: 10px;
+              margin-left: 50px;
+              margin-right: 50px;
+              margin-bottom: 50px;
+              color: Purple;
+              font-family: Impact;
+              font-size: 21px;
+              text-align: left;
+                 }
+          th {
+              border-bottom: 5px;
+              background-color: purple;
+              color: orange;
+              }
+              
+          td{
+              border: 2px;
+          }
+          tr:nth-child(even) {background-color: #f2f2f2}
+            
+        </style>
+        
+        
+        
+        <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  background-color: black;
+  color: purple;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
     </head>
 	
 	<div id = "Title">
@@ -14,14 +93,15 @@
 <div id = "TheHeader">
 		</br>
 		Adrell C. Argonza</br>
+		Rahul Champaneria</br>
 		Mr. Millard</br>
 		AP CSP, Per. 3</br>
 		AHS 2018-2019
 		</div>
 		</br>
-
+<div id = "boop">
 	<div class="navbar">
-      <a href="https://thelakers1-aargonzafonza.c9users.io/Turtles.html">Home</a>
+      <a href="https://thelakers1-aargonzafonza.c9users.io/thelakers.html">Home</a>
     <div class="navbar">
       <a href="https://thelakers1-aargonzafonza.c9users.io/TheStartingLineup.html">The Starting Lineup</a>
      <div class="navbar">
@@ -30,7 +110,10 @@
  </div>
  </div>
  
-</br></br>
+</body>
+
+</br>
+</br>
 
 <span id="date_time" style="margin-left:15px"></span>
 <script type="text/javascript">window.onload = date_time('date_time')
@@ -51,21 +134,69 @@
 		</script>
 	
 	
+<div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066421.png&w=350&h=254" style="width:100%">
+  <div class="text">Lonzo Ball</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3913176.png&w=350&h=254" style="width:100%">
+  <div class="text">Brandon Ingram</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254" style="width:100%">
+  <div class="text">Lebron James</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134907.png&w=350&h=254" style="width:100%">
+  <div class="text">Kyle Kuzma</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3452.png&w=350&h=254" style="width:100%">
+  <div class="text">JaVale McGee</div>
+</div>
+
+</div>	
+	
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1;}
+  
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000);
+}
+</script>
+	
+	
 </br>
 	
 	<main>
 	<div id="TheStartingLineup">
 		<h2>The Starting Lineup</h2>
 		
-    <form action='Turtles.php' method='post'>
+    <form action='thelakers.php' method='post'>
             <select  input type ="text" name="player" id="player">
-                 <option value="Lonzo">Lonzo Ball</option>
-                 <option value="Brandy">Brandon Ingram</option>
+                 <option value="Lonzo Ball">Lonzo Ball</option>
+                 <option value="Brandon Ingram">Brandon Ingram</option>
                  <option value="Lebron James">Lebron James</option>
-                 <option value="Hawksbill">Kyle Kuzma</option>
-                 <option value="Javvy">Javale</option>
-                 <option value="Luke">Luke Walton</option>
-                 <option value="Someone">Someone</option>
+                 <option value="Kyle Kuzma">Kyle Kuzma</option>
+                 <option value="JaVale McGee">Javale McGee</option>
             </select>
             <input type="submit" value="Select Player">
     </form>
@@ -73,8 +204,9 @@
 	
 	
 	</br>
-
-
+    </br>
+    </br>
+    
 	</main>	
     <!-- The content of your web page will go here -->
 	

@@ -8,16 +8,32 @@
             $testField = $_POST['player'];
             $query = "	select * from player where player = '" . $testField."';";
             $result = mysqli_query($conn, $query);
+            
+            echo "<table>";
+            echo "<tr><th>Player Name</th><th>Player Number</th><th>Player Position</th><th>Player PPG</th><th>Player Height</th><th>Player Weight</th><th>Player Age</th><th>Year Drafted</th><th>Years in the League</th><th>About Player</th></tr>";
             while ($row = mysqli_fetch_assoc($result)) {
-            echo "Player Name: " . $row['player']."<br>" ;
-            echo "Player Number: ". $row['player1']."<br>" ;
-            echo "Player Position: " . $row['player2']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
-            echo "Player Age: " . $row['player3']."<br>" ;
+            echo "<tr><td>";
+            echo $row['player'];
+            echo "</td><td>";
+            echo $row['player1'];
+            echo "</td><td>";
+            echo $row['player2'];
+            echo "</td><td>";
+            echo $row['player3'];
+            echo "</td><td>";
+            echo $row['player4'];
+            echo "</td><td>";
+            echo $row['player5'];
+            echo "</td><td>";
+            echo $row['player6'];
+            echo "</td><td>";
+            echo $row['player7'];
+            echo "</td><td>";
+            echo $row['player8'];
+            echo "</td><td>";
+            echo $row['player9'];
+            echo "</td></tr>";
           }
+            echo "</table>";
         }
 ?>
